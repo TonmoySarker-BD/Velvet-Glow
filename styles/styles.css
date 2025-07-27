@@ -457,6 +457,84 @@ nav li ul li {
 }
 
 
+/* Our Popular Product */
+
+.popular-product {
+    padding: 60px 10vw;
+    background-color: #f8f8f8;
+}
+
+.popular-product h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: rgb(29, 24, 24);
+}
+
+.product-cards {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+.product-image {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.popular-product img {
+    width: 250px;
+    height: 310px;
+    padding: 60px 45px;
+    border-radius: 4px;
+    background: rgb(242, 242, 242);
+}
+
+.discount {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #CE4E61;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.875rem;
+}
+
+.p-title {
+    color: rgb(28, 28, 28);
+    font-family: "Arsenal", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.p-dis {
+    color: rgb(83, 81, 81);
+    font-family: "DM Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+    padding-top: 10px;
+}
+
+.p-price {
+    color: rgb(237, 15, 15);
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+
 
 /* Responsive for medium screens */
 @media (max-width: 1024px) {
@@ -589,6 +667,15 @@ nav li ul li {
     .right-rev {
         right: 6px;
     }
+
+
+    /* Our Popular Product */
+    .popular-product {
+        padding: 40px 5vw;
+    }
+    .product-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 
@@ -624,4 +711,9 @@ nav li ul li {
         color: #777;
     }
 
+    /* Our Popular Product */
+    
+    .product-cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
