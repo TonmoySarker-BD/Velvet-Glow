@@ -17,7 +17,9 @@
 
     <!-- Stylesheet + Font Awesome Icons -->
     <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
@@ -37,7 +39,7 @@
                 <img src="./assets/logo.png" alt="Velvet Glow Logo">
                 <span class="logo-text">Velvet Glow</span>
             </div>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="#Home">Home</a></li>
                 <li><a href="#shop">Shop</a></li>
                 <li><a href="#product">Product</a></li>
@@ -56,11 +58,69 @@
                 <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
                 <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
             </ul>
+
+            <!-- Menu Dropdown for small screens -->
+            <div class="menu-dropdown">
+                <button id="menu-toggle" class="menu-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <ul id="dropdown-menu" class="dropdown-menu">
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#product">Product</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
     <!-- Main content section -->
     <main>
+        <section class="hero">
+            <div class="hero-text">
+                <div class="hero-heading">
+                    <div class="circle-1"></div>
+                    <div class="circle-2"></div>
+                    <h3>New Spring 2025 <br> Collections</h3>
+                </div>
+
+                <h1>
+                    Fashion That <br> Feels As Good As It <span>Looks</span>
+                </h1>
+                <p>
+                    Streetwear-inspired and flavor-packed, every drop celebrates individuality, freedom, and effortless
+                    style—where comfort meets cultural edge.
+                </p>
+                <button class="btn-primary">Get Started <svg width="16.627899" height="16.627930"
+                        viewBox="0 0 16.6279 16.6279" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <desc>
+                            Created with Pixso.
+                        </desc>
+                        <defs />
+                        <path id="Vector"
+                            d="M1.27 0L1.27 2.55L12.26 2.55L0 14.82L1.8 16.62L14.06 4.36L14.06 15.34L16.62 15.34L16.62 0L1.27 0Z"
+                            fill="#fff" fill-opacity="1.000000" fill-rule="nonzero" />
+                    </svg>
+                </button>
+
+            </div>
+            <div class="hero-image">
+
+                <div class="hero-image-underlay">
+                </div>
+                <div class="image-quote">
+                    <div><i class="fa-solid fa-quote-left"></i></div>
+                    <p>
+                        "Fashion is about dressing according to what’s fashionable. Style is more about being
+                        yourself."
+                    </p>
+                    <h2>_______ Afia Jaman</h2>
+                </div>
+                <img src="./assets/banner-hero.png" alt="Hero Image">
+            </div>
+        </section>
 
     </main>
 
@@ -68,6 +128,9 @@
     <footer>
 
     </footer>
+
+    <!-- Scripts -->
+    <script src="./scripts/script.js"></script>
 </body>
 
 </html>
