@@ -3,12 +3,7 @@
 
 
 /* Global Styles */
-html {
-    font-size: 16px;
-    scroll-behavior: smooth;
-}
-
-body {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -24,12 +19,13 @@ header {
 
 .promo-banner {
     background: #1C1C1C;
-    padding: 7px 0;
+    padding: 14px 0;
 }
+
 .promo-banner p {
     color: rgb(255, 255, 255);
     font-family: "Arsenal", sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 700;
     letter-spacing: 0%;
     text-align: center;
@@ -39,33 +35,84 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    justify-items: center;
+    padding: 12px 10vw;
 }
+
+/* Navigation Logo */
 
 nav .logo img {
     max-height: 50px;
 }
 
+nav .logo-text {
+    color: rgb(206, 78, 97);
+    font-family: "Roboto", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+
+/* Navigation Links */
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
+    gap: 20px;
+    padding: 10px 20px;
 }
 
-nav ul li {
-    margin-left: 20px;
+nav li {
+    position: relative;
 }
 
-nav ul li a {
+nav a {
     text-decoration: none;
     color: #333;
-    font-weight: bold;
+    padding: 5px 10px;
+    display: block;
 }
 
-nav ul li a:hover {
-    color: #007bff;
+/* Dropdown styles */
+nav li ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    display: none;
+    flex-direction: column;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
+
+nav li:hover ul {
+    display: flex;
+}
+
+nav li ul li {
+    width: 150px;
+}
+
+
+/* Navigation Icons */
+.nav-icons li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 0px;
+
+    /* border: dashed 2px #ccc; */
+    border-radius: 20px;
+    box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.1);
+    background: rgb(255, 255, 255);
+}
+
 
 /* Header related styles end */
 
