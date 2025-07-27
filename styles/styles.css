@@ -593,17 +593,95 @@ nav li ul li {
 }
 
 .testimonial-img {
-    width: 50%;
-    height: auto;
     right: 0;
     position: absolute;
-    z-index: 1;
 }
 
 .testimonial-img img {
-    width: 100%;
+    width: 50%;
     border-radius: 12px;
 }
+
+
+
+/* Latest News and Blog */
+.latest-news {
+    padding: 60px 10vw;
+    background-color: #f8f8f8;
+}
+
+.latest-news h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: rgb(29, 24, 24);
+}
+
+.news-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.news-card {
+    border-radius: 8px;
+}
+
+.news-card img {
+    padding: 0;
+    height: 75%;
+    object-fit: cover;
+}
+
+
+.news-card h3 {
+    color: rgb(28, 28, 28);
+    font-family: "Roboto", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.news-card p {
+    color: rgb(104, 101, 101);
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.btn-read {
+    padding: 12px 24px;
+    border-radius: 8px;
+    color: rgb(28, 28, 28);
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: 1px solid rgb(206, 78, 97);
+    border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Responsive for medium screens */
@@ -754,15 +832,23 @@ nav li ul li {
         padding: 40px 5vw;
         background-color: #f9f9f9;
     }
-    .testimonial-cards{
+
+    .testimonial-cards {
         width: 100%;
         margin-top: 50px;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .testimonial-img{
+
+    .testimonial-img {
         display: none;
+    }
+
+
+    /* Latest News and Blog */
+    .news-cards {
+        grid-template-columns: repeat(2, 1fr);
     }
 
 }
@@ -803,6 +889,11 @@ nav li ul li {
     /* Our Popular Product */
 
     .product-cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* Latest News and Blog */
+    .news-cards {
         grid-template-columns: repeat(1, 1fr);
     }
 }
