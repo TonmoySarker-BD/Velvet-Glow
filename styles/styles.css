@@ -1,0 +1,75 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Jost:ital,wght@0,100..900;1,100..900&family=Maven+Pro:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* Global Styles */
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Header related styles start */
+
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.promo-banner {
+    background: #1C1C1C;
+    padding: 7px 0;
+}
+.promo-banner p {
+    color: rgb(255, 255, 255);
+    font-family: "Arsenal", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav .logo img {
+    max-height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+/* Header related styles end */
+
+
+
+
+/* Main content styles */
