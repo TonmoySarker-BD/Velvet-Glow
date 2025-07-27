@@ -310,11 +310,63 @@ nav li ul li {
 }
 
 
+/* Browse Collection Section */
+.browse-collection {
+    padding: 60px 10vw;
+    background: #fff;
+}
 
+.browse-collection h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: rgb(29, 24, 24);
+}
+
+.collection-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    color: rgb(28, 28, 28);
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0%;
+}
+
+.card p {
+    color: rgb(174, 89, 40);
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+}
 
 /* Responsive for medium screens */
 
 @media (max-width: 1024px) {
+
+    /* Navigation Links and Icons */
 
     .nav-links,
     .nav-icons {
@@ -345,6 +397,7 @@ nav li ul li {
         flex-direction: column;
     }
 
+    /* Hero Section */
     .hero {
         flex-direction: column-reverse;
         text-align: center;
@@ -374,6 +427,17 @@ nav li ul li {
         top: 50px;
         right: -75px;
     }
+
+    /* Browse Collection Section */
+    .collection-cards {
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+
+
+
+
+
 }
 
 
