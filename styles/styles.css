@@ -461,7 +461,6 @@ nav li ul li {
 
 .popular-product {
     padding: 60px 10vw;
-    background-color: #f8f8f8;
 }
 
 .popular-product h2 {
@@ -538,28 +537,26 @@ nav li ul li {
 /* Customer Testimonial */
 .testimonial {
     padding: 60px 10vw;
-    position: relative;
+    background-color: #f9f9f9;
 }
 
 .testimonial h2 {
     text-align: center;
-    margin-bottom: 40px;
     font-size: 2.5rem;
     color: rgb(29, 24, 24);
 }
 
 .review {
+    height: 400px;
+    background: url('../assets/image-4.png') no-repeat center right;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 40px;
-    position: relative;
 }
 
 .testimonial-cards {
     width: 70%;
     margin-top: 100px;
-    z-index: 2;
     display: flex;
     gap: 32px;
     padding: 0px;
@@ -586,28 +583,12 @@ nav li ul li {
     border-radius: 50%;
 }
 
-.testimonial-text {
-    font-size: 0.95rem;
-    line-height: 1.5;
-    color: #333;
-}
-
-.testimonial-img {
-    right: 0;
-    position: absolute;
-}
-
-.testimonial-img img {
-    width: 50%;
-    border-radius: 12px;
-}
 
 
 
 /* Latest News and Blog */
 .latest-news {
     padding: 60px 10vw;
-    background-color: #f8f8f8;
 }
 
 .latest-news h2 {
@@ -677,7 +658,7 @@ footer {
     text-align: left;
     background-color: #000;
     color: #fff;
-    padding: 40px 10vw;
+    padding: 100px 10vw;
     display: flex;
     flex-direction: column;
     font-family: "Roboto", sans-serif;
@@ -860,9 +841,9 @@ footer a:hover {
 }
 
 .bottom-footer {
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 3px solid white;
     padding-top: 20px;
-    text-align: center;
+    text-align: left;
     font-size: 0.875rem;
     color: #ccc;
     margin-top: 20px;
@@ -1018,17 +999,19 @@ footer a:hover {
         padding: 40px 5vw;
         background-color: #f9f9f9;
     }
-
     .testimonial-cards {
-        width: 100%;
-        margin-top: 50px;
+        width: 70%;
+        margin-top: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-
-    .testimonial-img {
-        display: none;
+    .review{
+        height: 500px;
+        background: url('../assets/image-4.png') no-repeat center right;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
 
