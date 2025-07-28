@@ -289,7 +289,7 @@ nav li ul li {
 
 .image-quote {
     position: absolute;
-    top: 0px;
+    top: 50px;
     right: 0px;
     max-width: 250px;
     z-index: 2;
@@ -1056,6 +1056,7 @@ footer a:hover {
 
     .image-quote {
         font-size: 0.5rem;
+        top: 0px;
         right: 0px;
         max-width: 150px;
     }
@@ -1064,6 +1065,10 @@ footer a:hover {
         margin-top: 5px;
         font-size: 0.5rem;
         color: #777;
+    }
+
+    .image-quote p {
+        max-width: 100px;
     }
 
     /* Our Popular Product */
